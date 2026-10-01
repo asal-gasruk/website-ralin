@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "siteName": "Tedja Coffee",
+    "home": { "title": "Tedja Coffee — For Your Stride", "description": "Coffee, space and energy for people who keep moving. Six Tedja spots across Bandung." },
+    "menu": { "title": "Menu", "description": "Good coffee, good energy. Explore the Tedja menu." },
+    "locations": { "title": "Locations", "description": "There's a Tedja for every stride. Find a Tedja near you in Bandung." },
+    "community": { "title": "Community", "description": "People make the place. Join the Tedja community." },
+    "journal": { "title": "Journal", "description": "Stories, ideas and inspiration from Tedja and beyond." },
+    "notFound": { "title": "Page not found" }
+  },
+  "nav": {
+    "experience": "Experience",
+    "menu": "Menu",
+    "locations": "Locations",
+    "community": "Community",
+    "journal": "Journal",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "home": "Tedja Coffee home",
+    "language": "Language"
+  },
+  "common": {
+    "readMore": "Read more",
+    "viewLocation": "View location",
+    "openInMaps": "Open in Google Maps",
+    "scrollToExplore": "Scroll to explore",
+    "backToJournal": "Back to journal",
+    "detailsSoon": "Address & opening hours coming soon",
+    "followInstagram": "Follow on Instagram",
+    "backToTop": "Back to top",
+    "loading": "Loading page…"
+  },
+  "hero": {
+    "title": "For your stride.",
+    "subtitle": "Coffee, space and energy for people who keep moving.",
+    "explore": "Explore Tedja",
+    "find": "Find a Tedja"
+  },
+  "pillars": {
+    "eyebrow": "More than coffee.",
+    "title": "A space for your next move.",
+    "focus": { "title": "Focus", "body": "Work better. Stay in your flow." },
+    "connect": { "title": "Connect", "body": "Meet better. Build meaningful relationships." },
+    "move": { "title": "Move", "body": "Live better. Keep progressing everyday." }
+  },
+  "day": {
+    "eyebrow": "The Tedja experience",
+    "title": "Your day, your stride.",
+    "body": "From your first sip in the morning to your plans at night. We're here for every part of your day.",
+    "cta": "See the experience",
+    "morning": { "label": "Morning", "title": "Focus", "body": "Great coffee to start your day with clarity." },
+    "afternoon": { "label": "Afternoon", "title": "Connect", "body": "Good place for meetings and great ideas." },
+    "evening": { "label": "Evening", "title": "Community", "body": "Meet people, share stories, create memories." }
+  },
+  "picks": {
+    "eyebrow": "Tedja picks",
+    "title": "Good coffee. Good energy.",
+    "body": "Our signature picks, crafted for your stride.",
+    "cta": "Explore menu"
+  },
+  "locations": {
+    "eyebrow": "Find your Tedja",
+    "title": "There's a Tedja for every stride.",
+    "body": "Choose your favorite place to work, meet, or just be you. Also in Margahayu, Summarecon & Antapani.",
+    "cta": "View all locations"
+  },
+  "community": {
+    "eyebrow": "Tedja community",
+    "title": "People make the place.",
+    "body": "Join our community and be part of something that keeps growing.",
+    "cta": "Join the community"
+  },
+  "journal": {
+    "eyebrow": "Tedja journal",
+    "title": "Keep moving. Keep learning.",
+    "body": "Stories, ideas and inspiration from Tedja and beyond.",
+    "cta": "Read all articles",
+    "categories": {
+      "productivity": "Productivity",
+      "community": "Community",
+      "creative": "Creative",
+      "coffee": "Coffee",
+      "people": "People"
+    }
+  },
+  "closing": {
+    "body": "At Tedja, we believe every cup of coffee can be a step towards a better you.",
+    "line1": "Keep moving.",
+    "line2": "Keep creating.",
+    "line3": "Keep your stride."
+  },
+  "menuPage": {
+    "eyebrow": "Menu",
+    "title": "Good coffee. Good energy.",
+    "body": "Crafted to fuel your focus, your meetings and your evenings.",
+    "all": "All",
+    "categories": { "coffee": "Coffee", "non-coffee": "Non-coffee", "food": "Food" },
+    "pick": "Tedja pick",
+    "note": "Menu and availability may vary by location."
+  },
+  "locationsPage": {
+    "eyebrow": "Locations",
+    "title": "There's a Tedja for every stride.",
+    "body": "Six Tedja spots across Bandung — for focus, connection and community."
+  },
+  "communityPage": {
+    "eyebrow": "Community",
+    "title": "People make the place.",
+    "body": "From padel courts to open mics, there's always something moving at Tedja.",
+    "ctaTitle": "Want to start something with us?",
+    "ctaBody": "We love hosting communities. Reach out and let's make it happen."
+  },
+  "journalPage": {
+    "eyebrow": "Journal",
+    "title": "Keep moving. Keep learning.",
+    "body": "Stories, ideas and inspiration from Tedja and beyond.",
+    "more": "More stories"
+  },
+  "footer": {
+    "about": "Coffee, space and energy for people who keep moving. Six Tedja spots across Bandung — for focus, connection and community.",
+    "explore": "Explore",
+    "company": "Company",
+    "info": "Info",
+    "aboutTedja": "About Tedja",
+    "careers": "Careers",
+    "press": "Press",
+    "contact": "Contact",
+    "workWithUs": "Work with us",
+    "privateEvent": "Private event",
+    "feedback": "Feedback",
+    "newsletter": "Newsletter",
+    "newsletterBody": "Stay updated with Tedja stories, events and offers.",
+    "emailPlaceholder": "Your email address",
+    "subscribe": "Subscribe",
+    "subscribed": "Thanks! You're on the list.",
+    "invalidEmail": "Please enter a valid email address.",
+    "rights": "© {year} Tedja Coffee. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
+  "notFound": {
+    "title": "Lost your stride?",
+    "body": "The page you're looking for doesn't exist or has moved.",
+    "cta": "Back to home"
+  }
+}

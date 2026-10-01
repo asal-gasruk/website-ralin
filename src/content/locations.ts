@@ -1,0 +1,62 @@
+import type { Location } from "./types";
+
+// TODO: lengkapi alamat & jam buka Margahayu, Summarecon, Antapani.
+export const locations: Location[] = [
+  {
+    slug: "saparua",
+    name: "Tedja Saparua",
+    tag: { en: "Flagship", id: "Flagship" },
+    area: "Saparua, Bandung",
+    address: "Jl. Aceh No. 50",
+    hours: "07:00 – 24:00",
+    image: "/images/loc-saparua.webp",
+    mapsQuery: "Tedja Coffee Saparua Jl. Aceh No. 50 Bandung",
+    isFeatured: true,
+  },
+  {
+    slug: "tamblong",
+    name: "Tedja Tamblong",
+    tag: { en: "Heritage & City", id: "Heritage & Kota" },
+    area: "Tamblong, Bandung",
+    address: "Jl. Tamblong No. 46",
+    hours: "07:00 – 22:00",
+    image: "/images/loc-tamblong.webp",
+    mapsQuery: "Tedja Coffee Tamblong Jl. Tamblong No. 46 Bandung",
+    isFeatured: true,
+  },
+  {
+    slug: "kiara-artha",
+    name: "Tedja Kiara Artha",
+    tag: { en: "Community & Park", id: "Komunitas & Taman" },
+    area: "Kiara Artha, Bandung",
+    address: "Jl. Banten No. 10a",
+    hours: "07:00 – 22:00",
+    image: "/images/loc-kiara-artha.webp",
+    mapsQuery: "Tedja Coffee Kiara Artha Jl. Banten No. 10a Bandung",
+    isFeatured: true,
+  },
+  {
+    slug: "margahayu",
+    name: "Tedja Margahayu",
+    tag: { en: "Neighbourhood", id: "Lingkungan" },
+    area: "Margahayu, Bandung",
+    image: "/images/loc-margahayu.webp",
+    mapsQuery: "Tedja Coffee Margahayu Bandung",
+  },
+  {
+    slug: "summarecon",
+    name: "Tedja Summarecon",
+    tag: { en: "Neighbourhood", id: "Lingkungan" },
+    area: "Summarecon, Bandung",
+    image: "/images/loc-summarecon.webp",
+    mapsQuery: "Tedja Coffee Summarecon Bandung",
+  },
+  {
+    slug: "antapani",
+    name: "Tedja Antapani",
+    tag: { en: "Neighbourhood", id: "Lingkungan" },
+    area: "Antapani, Bandung",
+    image: "/images/loc-antapani.webp",
+    mapsQuery: "Tedja Coffee Antapani Bandung",
+  },
+];

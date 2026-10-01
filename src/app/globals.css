@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+/*
+ * TEDJA Coffee — Brand Identity Guidelines v2.0
+ * Primary  : Fired Brick, Shell White, Botanical Depth
+ * Secondary: Orange, Teal, Deep Teal, Rust, Charcoal, Stone
+ */
+@theme {
+  --color-brick: #6f2d28;
+  --color-brick-900: #582523;
+  --color-brick-950: #3a1816;
+
+  --color-shell: #efe1d3;
+  --color-shell-50: #f4efec;
+
+  --color-botanical: #5a4f26;
+  --color-botanical-900: #463d1c;
+
+  --color-orange: #e18040;
+  --color-teal: #5a8b81;
+  --color-deep-teal: #003e44;
+  --color-rust: #924b31;
+  --color-charcoal: #473a3a;
+  --color-stone: #b5b8b1;
+
+  --font-display: var(--font-red-rose), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-host-grotesk), ui-sans-serif, system-ui, sans-serif;
+
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  /* fill-mode backwards: setelah selesai tidak menyisakan transform (aman untuk sticky/fixed) */
+  --animate-page-in: page-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  --animate-fade-in: fade-in 0.25s ease-out backwards;
+  /* Loader navigasi: lengkung "mengaduk" di atas mangkuk */
+  --animate-stir: stir 1.1s ease-in-out infinite;
+  --animate-bob: bob 1.1s ease-in-out infinite;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes page-in {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  }
+
+  @keyframes stir {
+    0%,
+    100% {
+      transform: rotate(-7deg);
+      opacity: 0.6;
+    }
+    50% {
+      transform: rotate(3deg);
+      opacity: 1;
+    }
+  }
+
+  @keyframes bob {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(1.5px);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-shell-50 font-sans text-charcoal antialiased;
+  }
+
+  /* Hierarki tipografi: Headline Red Rose Medium, body Host Grotesk */
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-semibold text-balance;
+  }
+
+  ::selection {
+    @apply bg-brick text-shell;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-orange;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold tracking-[0.18em] uppercase;
+  }
+}
+
+/*
+ * Scroll reveal berbasis CSS scroll-driven animation (tanpa JavaScript).
+ * Browser yang belum mendukung animation-timeline tetap menampilkan konten apa adanya.
+ *   .reveal          → elemen tunggal
+ *   .reveal-stagger  → setiap anak langsung, sedikit bergiliran per kolom
+ */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal,
+    .reveal-stagger > * {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 60%;
+    }
+
+    .reveal-stagger > :nth-child(3n + 2) {
+      animation-range: entry 8% entry 68%;
+    }
+
+    .reveal-stagger > :nth-child(3n + 3) {
+      animation-range: entry 16% entry 76%;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

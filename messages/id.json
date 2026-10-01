@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "siteName": "Tedja Coffee",
+    "home": { "title": "Tedja Coffee — For Your Stride", "description": "Kopi, ruang, dan energi untuk kamu yang terus bergerak. Enam Tedja di seluruh Bandung." },
+    "menu": { "title": "Menu", "description": "Kopi enak, energi baik. Jelajahi menu Tedja." },
+    "locations": { "title": "Lokasi", "description": "Selalu ada Tedja untuk setiap langkahmu. Temukan Tedja terdekat di Bandung." },
+    "community": { "title": "Komunitas", "description": "Orang-oranglah yang membentuk tempat. Gabung komunitas Tedja." },
+    "journal": { "title": "Jurnal", "description": "Cerita, ide, dan inspirasi dari Tedja dan sekitarnya." },
+    "notFound": { "title": "Halaman tidak ditemukan" }
+  },
+  "nav": {
+    "experience": "Pengalaman",
+    "menu": "Menu",
+    "locations": "Lokasi",
+    "community": "Komunitas",
+    "journal": "Jurnal",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu",
+    "home": "Beranda Tedja Coffee",
+    "language": "Bahasa"
+  },
+  "common": {
+    "readMore": "Baca selengkapnya",
+    "viewLocation": "Lihat lokasi",
+    "openInMaps": "Buka di Google Maps",
+    "scrollToExplore": "Gulir untuk menjelajah",
+    "backToJournal": "Kembali ke jurnal",
+    "detailsSoon": "Alamat & jam buka segera hadir",
+    "followInstagram": "Ikuti di Instagram",
+    "backToTop": "Kembali ke atas",
+    "loading": "Memuat halaman…"
+  },
+  "hero": {
+    "title": "For your stride.",
+    "subtitle": "Kopi, ruang, dan energi untuk kamu yang terus bergerak.",
+    "explore": "Jelajahi Tedja",
+    "find": "Cari Tedja"
+  },
+  "pillars": {
+    "eyebrow": "Lebih dari kopi.",
+    "title": "Ruang untuk langkahmu berikutnya.",
+    "focus": { "title": "Fokus", "body": "Bekerja lebih baik. Tetap dalam alurmu." },
+    "connect": { "title": "Terhubung", "body": "Bertemu lebih baik. Bangun relasi yang bermakna." },
+    "move": { "title": "Bergerak", "body": "Hidup lebih baik. Terus berkembang setiap hari." }
+  },
+  "day": {
+    "eyebrow": "Pengalaman Tedja",
+    "title": "Harimu, langkahmu.",
+    "body": "Dari tegukan pertama di pagi hari hingga rencanamu di malam hari. Kami hadir di setiap bagian harimu.",
+    "cta": "Lihat pengalamannya",
+    "morning": { "label": "Pagi", "title": "Fokus", "body": "Kopi enak untuk memulai hari dengan jernih." },
+    "afternoon": { "label": "Siang", "title": "Terhubung", "body": "Tempat yang pas untuk rapat dan ide-ide hebat." },
+    "evening": { "label": "Malam", "title": "Komunitas", "body": "Bertemu orang, berbagi cerita, ciptakan kenangan." }
+  },
+  "picks": {
+    "eyebrow": "Pilihan Tedja",
+    "title": "Kopi enak. Energi baik.",
+    "body": "Menu andalan kami, diracik untuk setiap langkahmu.",
+    "cta": "Jelajahi menu"
+  },
+  "locations": {
+    "eyebrow": "Temukan Tedja-mu",
+    "title": "Selalu ada Tedja untuk setiap langkah.",
+    "body": "Pilih tempat favoritmu untuk bekerja, bertemu, atau sekadar menjadi dirimu. Juga hadir di Margahayu, Summarecon & Antapani.",
+    "cta": "Lihat semua lokasi"
+  },
+  "community": {
+    "eyebrow": "Komunitas Tedja",
+    "title": "Orang-oranglah yang membentuk tempat.",
+    "body": "Gabung komunitas kami dan jadi bagian dari sesuatu yang terus bertumbuh.",
+    "cta": "Gabung komunitas"
+  },
+  "journal": {
+    "eyebrow": "Jurnal Tedja",
+    "title": "Terus bergerak. Terus belajar.",
+    "body": "Cerita, ide, dan inspirasi dari Tedja dan sekitarnya.",
+    "cta": "Baca semua artikel",
+    "categories": {
+      "productivity": "Produktivitas",
+      "community": "Komunitas",
+      "creative": "Kreatif",
+      "coffee": "Kopi",
+      "people": "Orang"
+    }
+  },
+  "closing": {
+    "body": "Di Tedja, kami percaya setiap cangkir kopi bisa menjadi langkah menuju dirimu yang lebih baik.",
+    "line1": "Keep moving.",
+    "line2": "Keep creating.",
+    "line3": "Keep your stride."
+  },
+  "menuPage": {
+    "eyebrow": "Menu",
+    "title": "Kopi enak. Energi baik.",
+    "body": "Diracik untuk menemani fokusmu, rapatmu, dan malammu.",
+    "all": "Semua",
+    "categories": { "coffee": "Kopi", "non-coffee": "Non-kopi", "food": "Makanan" },
+    "pick": "Pilihan Tedja",
+    "note": "Menu dan ketersediaan dapat berbeda di setiap lokasi."
+  },
+  "locationsPage": {
+    "eyebrow": "Lokasi",
+    "title": "Selalu ada Tedja untuk setiap langkah.",
+    "body": "Enam Tedja di seluruh Bandung — untuk fokus, terhubung, dan berkomunitas."
+  },
+  "communityPage": {
+    "eyebrow": "Komunitas",
+    "title": "Orang-oranglah yang membentuk tempat.",
+    "body": "Dari lapangan padel hingga open mic, selalu ada yang bergerak di Tedja.",
+    "ctaTitle": "Ingin memulai sesuatu bersama kami?",
+    "ctaBody": "Kami senang menjadi tuan rumah komunitas. Hubungi kami dan mari wujudkan."
+  },
+  "journalPage": {
+    "eyebrow": "Jurnal",
+    "title": "Terus bergerak. Terus belajar.",
+    "body": "Cerita, ide, dan inspirasi dari Tedja dan sekitarnya.",
+    "more": "Cerita lainnya"
+  },
+  "footer": {
+    "about": "Kopi, ruang, dan energi untuk kamu yang terus bergerak. Enam Tedja di seluruh Bandung — untuk fokus, terhubung, dan berkomunitas.",
+    "explore": "Jelajahi",
+    "company": "Perusahaan",
+    "info": "Info",
+    "aboutTedja": "Tentang Tedja",
+    "careers": "Karier",
+    "press": "Media",
+    "contact": "Kontak",
+    "workWithUs": "Kerja sama",
+    "privateEvent": "Acara privat",
+    "feedback": "Masukan",
+    "newsletter": "Newsletter",
+    "newsletterBody": "Dapatkan kabar terbaru seputar cerita, acara, dan promo Tedja.",
+    "emailPlaceholder": "Alamat email kamu",
+    "subscribe": "Langganan",
+    "subscribed": "Terima kasih! Kamu sudah terdaftar.",
+    "invalidEmail": "Masukkan alamat email yang valid.",
+    "rights": "© {year} Tedja Coffee. Hak cipta dilindungi.",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat & Ketentuan"
+  },
+  "notFound": {
+    "title": "Kehilangan langkah?",
+    "body": "Halaman yang kamu cari tidak ada atau sudah dipindahkan.",
+    "cta": "Kembali ke beranda"
+  }
+}
