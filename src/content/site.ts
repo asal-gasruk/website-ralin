@@ -12,4 +12,17 @@ export const mainNav = [
   { key: "journal", href: "/journal" },
 ] as const;
 
+export const companyNav = [
+  { key: "aboutTedja", href: "/about" },
+  { key: "careers", href: "/careers" },
+  { key: "press", href: "/press" },
+  { key: "contact", href: "/contact" },
+] as const;
+
+export const infoNav = [
+  { key: "workWithUs", href: "/work-with-us" },
+  { key: "privateEvent", href: "/private-event" },
+  { key: "feedback", href: "/feedback" },
+] as const;
+
 export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.tedjacoffee.com";

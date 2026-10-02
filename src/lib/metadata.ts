@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 
 interface PageMetadataInput {
@@ -31,4 +32,17 @@ export function buildMetadata({ locale, path, title, description, image }: PageM
       images: [{ url: image ?? "/images/hero.webp" }],
     },
   };
+}
+
+export type InfoPageKey = "about" | "careers" | "press" | "contact" | "workWithUs" | "privateEvent" | "feedback";
+
+/** generateMetadata untuk halaman informasi (judul & deskripsi dari messages `meta.<key>`). */
+export async function infoPageMetadata(
+  params: Promise<{ locale: string }>,
+  key: InfoPageKey,
+  path: string,
+): Promise<Metadata> {
+  const locale = (await params).locale as Locale;
+  const t = await getTranslations({ locale, namespace: "meta" });
+  return buildMetadata({ locale, path, title: t(`${key}.title`), description: t(`${key}.description`) });
 }

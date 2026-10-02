@@ -1,14 +1,13 @@
 import { useTranslations } from "next-intl";
 import { Logo } from "@/components/brand/Logo";
 import { StarMark } from "@/components/brand/Supergraphic";
-import { mainNav } from "@/content/site";
+import { companyNav, infoNav, mainNav } from "@/content/site";
 import { Link } from "@/i18n/navigation";
 import { NewsletterForm } from "./NewsletterForm";
 import { SocialLinks } from "./SocialLinks";
 
-// TODO: halaman Company & Info belum ada — tautan sementara "#" mengikuti referensi.
-const companyLinks = ["aboutTedja", "careers", "press", "contact"] as const;
-const infoLinks = ["workWithUs", "privateEvent", "feedback", "privacy", "terms"] as const;
+// TODO: halaman Privacy Policy & Terms belum ada — sementara "#".
+const legalLinks = ["privacy", "terms"] as const;
 
 function FooterHeading({ children }: { children: string }) {
   return <h2 className="eyebrow font-sans text-[0.625rem] text-orange sm:text-xs">{children}</h2>;
@@ -61,11 +60,11 @@ export function Footer() {
           <div>
             <FooterHeading>{t("company")}</FooterHeading>
             <ul className={linkListClass}>
-              {companyLinks.map((key) => (
-                <li key={key}>
-                  <a href="#" className={linkClass}>
-                    {t(key)}
-                  </a>
+              {companyNav.map((item) => (
+                <li key={item.key}>
+                  <Link href={item.href} className={linkClass}>
+                    {t(item.key)}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -73,7 +72,14 @@ export function Footer() {
           <div>
             <FooterHeading>{t("info")}</FooterHeading>
             <ul className={linkListClass}>
-              {infoLinks.map((key) => (
+              {infoNav.map((item) => (
+                <li key={item.key}>
+                  <Link href={item.href} className={linkClass}>
+                    {t(item.key)}
+                  </Link>
+                </li>
+              ))}
+              {legalLinks.map((key) => (
                 <li key={key}>
                   <a href="#" className={linkClass}>
                     {t(key)}

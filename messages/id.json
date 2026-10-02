@@ -1,12 +1,57 @@
 {
   "meta": {
     "siteName": "Tedja Coffee",
-    "home": { "title": "Tedja Coffee — For Your Stride", "description": "Kopi, ruang, dan energi untuk kamu yang terus bergerak. Enam Tedja di seluruh Bandung." },
-    "menu": { "title": "Menu", "description": "Kopi enak, energi baik. Jelajahi menu Tedja." },
-    "locations": { "title": "Lokasi", "description": "Selalu ada Tedja untuk setiap langkahmu. Temukan Tedja terdekat di Bandung." },
-    "community": { "title": "Komunitas", "description": "Orang-oranglah yang membentuk tempat. Gabung komunitas Tedja." },
-    "journal": { "title": "Jurnal", "description": "Cerita, ide, dan inspirasi dari Tedja dan sekitarnya." },
-    "notFound": { "title": "Halaman tidak ditemukan" }
+    "home": {
+      "title": "Tedja Coffee — For Your Stride",
+      "description": "Kopi, ruang, dan energi untuk kamu yang terus bergerak. Enam Tedja di seluruh Bandung."
+    },
+    "menu": {
+      "title": "Menu",
+      "description": "Kopi enak, energi baik. Jelajahi menu Tedja."
+    },
+    "locations": {
+      "title": "Lokasi",
+      "description": "Selalu ada Tedja untuk setiap langkahmu. Temukan Tedja terdekat di Bandung."
+    },
+    "community": {
+      "title": "Komunitas",
+      "description": "Orang-oranglah yang membentuk tempat. Gabung komunitas Tedja."
+    },
+    "journal": {
+      "title": "Jurnal",
+      "description": "Cerita, ide, dan inspirasi dari Tedja dan sekitarnya."
+    },
+    "notFound": {
+      "title": "Halaman tidak ditemukan"
+    },
+    "about": {
+      "title": "Tentang Tedja",
+      "description": "Tedja adalah ruang transisi di seluruh Bandung — asupan fungsional dan lingkungan yang mendukung progres harianmu."
+    },
+    "careers": {
+      "title": "Karier",
+      "description": "Tumbuh bersama Tedja. Lihat posisi yang tersedia di lokasi kami di Bandung."
+    },
+    "press": {
+      "title": "Media",
+      "description": "Fakta brand, aset, dan kontak media Tedja Coffee."
+    },
+    "contact": {
+      "title": "Kontak",
+      "description": "Hubungi Tedja Coffee."
+    },
+    "workWithUs": {
+      "title": "Kerja Sama",
+      "description": "Kolaborasi brand, kemitraan komunitas, dan acara bersama Tedja Coffee."
+    },
+    "privateEvent": {
+      "title": "Acara Privat",
+      "description": "Adakan rapat, perayaan, atau pertemuan komunitasmu di Tedja."
+    },
+    "feedback": {
+      "title": "Masukan",
+      "description": "Ceritakan kunjunganmu ke Tedja."
+    }
   },
   "nav": {
     "experience": "Pengalaman",
@@ -39,18 +84,39 @@
   "pillars": {
     "eyebrow": "Lebih dari kopi.",
     "title": "Ruang untuk langkahmu berikutnya.",
-    "focus": { "title": "Fokus", "body": "Bekerja lebih baik. Tetap dalam alurmu." },
-    "connect": { "title": "Terhubung", "body": "Bertemu lebih baik. Bangun relasi yang bermakna." },
-    "move": { "title": "Bergerak", "body": "Hidup lebih baik. Terus berkembang setiap hari." }
+    "focus": {
+      "title": "Fokus",
+      "body": "Bekerja lebih baik. Tetap dalam alurmu."
+    },
+    "connect": {
+      "title": "Terhubung",
+      "body": "Bertemu lebih baik. Bangun relasi yang bermakna."
+    },
+    "move": {
+      "title": "Bergerak",
+      "body": "Hidup lebih baik. Terus berkembang setiap hari."
+    }
   },
   "day": {
     "eyebrow": "Pengalaman Tedja",
     "title": "Harimu, langkahmu.",
     "body": "Dari tegukan pertama di pagi hari hingga rencanamu di malam hari. Kami hadir di setiap bagian harimu.",
     "cta": "Lihat pengalamannya",
-    "morning": { "label": "Pagi", "title": "Fokus", "body": "Kopi enak untuk memulai hari dengan jernih." },
-    "afternoon": { "label": "Siang", "title": "Terhubung", "body": "Tempat yang pas untuk rapat dan ide-ide hebat." },
-    "evening": { "label": "Malam", "title": "Komunitas", "body": "Bertemu orang, berbagi cerita, ciptakan kenangan." }
+    "morning": {
+      "label": "Pagi",
+      "title": "Fokus",
+      "body": "Kopi enak untuk memulai hari dengan jernih."
+    },
+    "afternoon": {
+      "label": "Siang",
+      "title": "Terhubung",
+      "body": "Tempat yang pas untuk rapat dan ide-ide hebat."
+    },
+    "evening": {
+      "label": "Malam",
+      "title": "Komunitas",
+      "body": "Bertemu orang, berbagi cerita, ciptakan kenangan."
+    }
   },
   "picks": {
     "eyebrow": "Pilihan Tedja",
@@ -94,7 +160,11 @@
     "title": "Kopi enak. Energi baik.",
     "body": "Diracik untuk menemani fokusmu, rapatmu, dan malammu.",
     "all": "Semua",
-    "categories": { "coffee": "Kopi", "non-coffee": "Non-kopi", "food": "Makanan" },
+    "categories": {
+      "coffee": "Kopi",
+      "non-coffee": "Non-kopi",
+      "food": "Makanan"
+    },
     "pick": "Pilihan Tedja",
     "note": "Menu dan ketersediaan dapat berbeda di setiap lokasi."
   },
@@ -148,5 +218,287 @@
     "title": "Kehilangan langkah?",
     "body": "Halaman yang kamu cari tidak ada atau sudah dipindahkan.",
     "cta": "Kembali ke beranda"
+  },
+  "forms": {
+    "required": "Kolom ini wajib diisi.",
+    "ratingRequired": "Silakan pilih penilaian.",
+    "invalidEmail": "Masukkan alamat email yang valid.",
+    "outOfRange": "Masukkan angka antara {min} dan {max}.",
+    "optional": "opsional",
+    "choose": "Pilih salah satu",
+    "requiredNote": "Kolom bertanda * wajib diisi.",
+    "sendAnother": "Kirim pesan lain",
+    "ratingValue": "{score} dari 5",
+    "fields": {
+      "name": "Nama lengkap",
+      "email": "Email",
+      "phone": "Telepon / WhatsApp",
+      "company": "Perusahaan / organisasi",
+      "message": "Pesan",
+      "topic": "Topik",
+      "location": "Lokasi pilihan",
+      "date": "Tanggal acara",
+      "guests": "Jumlah tamu",
+      "eventType": "Jenis acara",
+      "collabType": "Jenis kolaborasi",
+      "position": "Posisi",
+      "portfolio": "Link CV / portofolio",
+      "rating": "Bagaimana kunjunganmu?",
+      "visitDate": "Tanggal kunjungan",
+      "anyLocation": "Lokasi mana saja",
+      "other": "Lainnya"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Tentang Tedja",
+      "title": "Creating good strides.",
+      "body": "Ruang transisi untuk kamu yang terus bergerak."
+    },
+    "story": {
+      "eyebrow": "Cerita kami",
+      "title": "Tempat di antara dari mana kamu datang dan ke mana kamu melangkah.",
+      "p1": "TEDJA merupakan Coffee Shop yang berfungsi sebagai ruang transisi di berbagai titik strategis Bandung, menyediakan asupan fungsional dan lingkungan yang mendukung produktivitas untuk meningkatkan progres harianmu.",
+      "p2": "Creating Good Strides merepresentasikan komitmen Tedja Coffee sebagai ruang dukung (support system) aktif yang memfasilitasi setiap individu untuk melampaui batas dirinya melalui ritme yang seimbang.",
+      "p3": "Dari espresso pertama di pagi hari hingga obrolan larut malam, setiap Tedja dirancang untuk membantumu fokus, terhubung, dan terus bergerak."
+    },
+    "stats": {
+      "locations": "Lokasi di Bandung",
+      "communities": "Komunitas",
+      "open": "Buka mulai",
+      "city": "Kota asal"
+    },
+    "cta": {
+      "title": "Temukan Tedja-mu.",
+      "body": "Kunjungi salah satu tempat kami dan jadikan bagian dari langkahmu.",
+      "primary": "Cari Tedja",
+      "secondary": "Gabung komunitas"
+    }
+  },
+  "careers": {
+    "hero": {
+      "eyebrow": "Karier",
+      "title": "Tumbuh bersama kami.",
+      "body": "Bergabunglah dengan orang-orang yang membuat setiap Tedja terasa seperti rumah."
+    },
+    "why": {
+      "eyebrow": "Kenapa Tedja",
+      "title": "Lebih dari sekadar pekerjaan."
+    },
+    "perks": {
+      "learn": {
+        "title": "Belajar keahlian",
+        "body": "Pelatihan kopi dan dapur untuk mengasah kemampuanmu."
+      },
+      "grow": {
+        "title": "Ruang untuk berkembang",
+        "body": "Jenjang yang jelas dari crew hingga supervisor seiring kami membuka tempat baru."
+      },
+      "community": {
+        "title": "Bagian dari komunitas",
+        "body": "Bekerja berdampingan dengan klub, kreator, dan acara yang menghidupkan tempat kami."
+      },
+      "team": {
+        "title": "Tim yang peduli",
+        "body": "Kami saling menjaga, saat bertugas maupun tidak."
+      }
+    },
+    "roles": {
+      "eyebrow": "Posisi tersedia",
+      "title": "Temukan peranmu.",
+      "empty": "Belum ada posisi saat ini — tetap kirim datamu.",
+      "apply": "Lamar"
+    },
+    "apply": {
+      "eyebrow": "Lamar",
+      "title": "Ceritakan tentang dirimu.",
+      "body": "Kirim datamu dan kami akan menghubungimu bila ada posisi yang cocok.",
+      "submit": "Kirim lamaran",
+      "successTitle": "Lamaran diterima",
+      "successBody": "Terima kasih atas minatmu pada Tedja. Tim kami akan meninjau datamu dan menghubungimu."
+    },
+    "types": {
+      "fullTime": "Penuh waktu",
+      "partTime": "Paruh waktu"
+    }
+  },
+  "press": {
+    "hero": {
+      "eyebrow": "Media",
+      "title": "Tedja di media.",
+      "body": "Fakta brand, aset, dan kontak media dalam satu tempat."
+    },
+    "facts": {
+      "eyebrow": "Sekilas",
+      "title": "Tedja Coffee secara singkat.",
+      "tagline": "Tagline",
+      "taglineValue": "For your stride.",
+      "promise": "Janji brand",
+      "promiseValue": "Creating Good Strides",
+      "locations": "Lokasi",
+      "locationsValue": "{count} tempat di Bandung",
+      "city": "Berbasis di",
+      "cityValue": "Bandung, Indonesia"
+    },
+    "assets": {
+      "eyebrow": "Aset brand",
+      "title": "Logo & warna.",
+      "body": "Gunakan logo berwarna Fired Brick di latar terang, dan Shell White atau putih di latar Fired Brick atau gelap. Jangan meregangkan, memberi outline, atau mengganti warnanya.",
+      "onLight": "Latar terang",
+      "onBrick": "Latar Fired Brick",
+      "onShell": "Latar Shell White",
+      "primary": "Warna utama",
+      "secondary": "Warna sekunder"
+    },
+    "cta": {
+      "title": "Menulis tentang Tedja?",
+      "body": "Untuk wawancara, foto, atau press kit lengkap, hubungi tim kami.",
+      "primary": "Hubungi kami"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Kontak",
+      "title": "Sapa kami.",
+      "body": "Ada pertanyaan, ide, atau ingin berbagi langkahmu? Kami senang mendengarnya."
+    },
+    "channels": {
+      "eyebrow": "Hubungi kami",
+      "title": "Temui kami di mana pun.",
+      "visit": {
+        "title": "Kunjungi Tedja",
+        "body": "Enam tempat di Bandung, buka mulai 07:00."
+      },
+      "instagram": {
+        "title": "Instagram",
+        "body": "Cerita harian, acara, dan menu baru."
+      },
+      "tiktok": {
+        "title": "TikTok",
+        "body": "Di balik bar dan seputar komunitas."
+      }
+    },
+    "form": {
+      "eyebrow": "Kirim pesan",
+      "title": "Ada yang bisa kami bantu?",
+      "submit": "Kirim pesan",
+      "successTitle": "Pesan terkirim",
+      "successBody": "Terima kasih sudah menghubungi kami. Kami akan membalas secepatnya."
+    },
+    "topics": {
+      "general": "Pertanyaan umum",
+      "partnership": "Kerja sama",
+      "press": "Media & pers",
+      "event": "Acara privat",
+      "careers": "Karier",
+      "feedback": "Masukan"
+    }
+  },
+  "workWithUs": {
+    "hero": {
+      "eyebrow": "Kerja sama",
+      "title": "Mari berkarya bersama.",
+      "body": "Brand, komunitas, dan kreator — Tedja adalah ruang yang dibangun untuk kolaborasi."
+    },
+    "types": {
+      "eyebrow": "Bentuk kolaborasi",
+      "title": "Wujudkan bersama Tedja.",
+      "brand": {
+        "title": "Kolaborasi brand",
+        "body": "Minuman, merchandise, dan kampanye yang diciptakan bersama."
+      },
+      "community": {
+        "title": "Kemitraan komunitas",
+        "body": "Meetup, klub, dan kelas rutin di tempat kami."
+      },
+      "popup": {
+        "title": "Pop-up & aktivasi",
+        "body": "Pamerkan produk atau peluncuranmu di depan tamu kami."
+      },
+      "corporate": {
+        "title": "Acara korporat",
+        "body": "Sesi tim dan offsite dengan kopi yang menemani."
+      }
+    },
+    "steps": {
+      "eyebrow": "Alurnya",
+      "title": "Tiga langkah sederhana.",
+      "one": {
+        "title": "Ceritakan idemu",
+        "body": "Beri tahu kami siapa kamu dan apa yang kamu rencanakan."
+      },
+      "two": {
+        "title": "Kita bahas bersama",
+        "body": "Tim kami menghubungimu untuk mematangkan detailnya."
+      },
+      "three": {
+        "title": "Wujudkan",
+        "body": "Kami rencanakan, siapkan, dan hidupkan di Tedja."
+      }
+    },
+    "form": {
+      "eyebrow": "Mulai percakapan",
+      "title": "Ceritakan idemu.",
+      "submit": "Kirim proposal",
+      "successTitle": "Proposal diterima",
+      "successBody": "Terima kasih sudah memikirkan Tedja. Tim kemitraan kami akan meninjau idemu dan menghubungimu."
+    }
+  },
+  "privateEvent": {
+    "hero": {
+      "eyebrow": "Acara privat",
+      "title": "Rayakan momenmu di Tedja.",
+      "body": "Rapat, perayaan, dan pertemuan — dengan kopi enak dan energi baik."
+    },
+    "types": {
+      "eyebrow": "Jenis acara",
+      "title": "Untuk setiap pertemuan.",
+      "meeting": {
+        "title": "Rapat & workshop",
+        "body": "Sesi fokus untuk tim dan kelas."
+      },
+      "celebration": {
+        "title": "Perayaan",
+        "body": "Ulang tahun, perpisahan, dan pencapaian."
+      },
+      "community": {
+        "title": "Pertemuan komunitas",
+        "body": "Meetup, ride-out, dan malam klub."
+      },
+      "launch": {
+        "title": "Peluncuran & acara brand",
+        "body": "Kenalkan produkmu di ruang yang berkarakter."
+      }
+    },
+    "included": {
+      "eyebrow": "Yang kami tawarkan",
+      "title": "Semua yang kamu butuhkan.",
+      "space": "Area khusus di lokasi pilihanmu",
+      "food": "Paket makanan & minuman",
+      "team": "Bantuan tim kami di hari-H",
+      "flexible": "Penataan fleksibel sesuai formatmu"
+    },
+    "form": {
+      "eyebrow": "Permintaan reservasi",
+      "title": "Rencanakan acaramu.",
+      "submit": "Ajukan reservasi",
+      "successTitle": "Permintaan diterima",
+      "successBody": "Terima kasih! Tim kami akan mengecek ketersediaan dan menghubungimu untuk konfirmasi."
+    }
+  },
+  "feedback": {
+    "hero": {
+      "eyebrow": "Masukan",
+      "title": "Bagaimana langkahmu?",
+      "body": "Setiap kunjungan membantu kami jadi lebih baik. Ceritakan yang kamu suka dan yang bisa kami tingkatkan."
+    },
+    "form": {
+      "eyebrow": "Kunjunganmu",
+      "title": "Bagikan pengalamanmu.",
+      "body": "Masukanmu langsung diteruskan ke tim di setiap lokasi.",
+      "submit": "Kirim masukan",
+      "successTitle": "Terima kasih!",
+      "successBody": "Kami menghargai waktumu. Masukanmu membantu kami menciptakan langkah yang lebih baik."
+    }
   }
 }

@@ -1,12 +1,57 @@
 {
   "meta": {
     "siteName": "Tedja Coffee",
-    "home": { "title": "Tedja Coffee — For Your Stride", "description": "Coffee, space and energy for people who keep moving. Six Tedja spots across Bandung." },
-    "menu": { "title": "Menu", "description": "Good coffee, good energy. Explore the Tedja menu." },
-    "locations": { "title": "Locations", "description": "There's a Tedja for every stride. Find a Tedja near you in Bandung." },
-    "community": { "title": "Community", "description": "People make the place. Join the Tedja community." },
-    "journal": { "title": "Journal", "description": "Stories, ideas and inspiration from Tedja and beyond." },
-    "notFound": { "title": "Page not found" }
+    "home": {
+      "title": "Tedja Coffee — For Your Stride",
+      "description": "Coffee, space and energy for people who keep moving. Six Tedja spots across Bandung."
+    },
+    "menu": {
+      "title": "Menu",
+      "description": "Good coffee, good energy. Explore the Tedja menu."
+    },
+    "locations": {
+      "title": "Locations",
+      "description": "There's a Tedja for every stride. Find a Tedja near you in Bandung."
+    },
+    "community": {
+      "title": "Community",
+      "description": "People make the place. Join the Tedja community."
+    },
+    "journal": {
+      "title": "Journal",
+      "description": "Stories, ideas and inspiration from Tedja and beyond."
+    },
+    "notFound": {
+      "title": "Page not found"
+    },
+    "about": {
+      "title": "About Tedja",
+      "description": "Tedja is a transition space across Bandung — functional food and drinks and an environment that supports your daily progress."
+    },
+    "careers": {
+      "title": "Careers",
+      "description": "Grow your stride with Tedja. Explore open roles across our Bandung locations."
+    },
+    "press": {
+      "title": "Press",
+      "description": "Brand facts, assets and media contact for Tedja Coffee."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Get in touch with Tedja Coffee."
+    },
+    "workWithUs": {
+      "title": "Work With Us",
+      "description": "Brand collaborations, community partnerships and events with Tedja Coffee."
+    },
+    "privateEvent": {
+      "title": "Private Event",
+      "description": "Host your meeting, celebration or community gathering at Tedja."
+    },
+    "feedback": {
+      "title": "Feedback",
+      "description": "Tell us about your visit to Tedja."
+    }
   },
   "nav": {
     "experience": "Experience",
@@ -39,18 +84,39 @@
   "pillars": {
     "eyebrow": "More than coffee.",
     "title": "A space for your next move.",
-    "focus": { "title": "Focus", "body": "Work better. Stay in your flow." },
-    "connect": { "title": "Connect", "body": "Meet better. Build meaningful relationships." },
-    "move": { "title": "Move", "body": "Live better. Keep progressing everyday." }
+    "focus": {
+      "title": "Focus",
+      "body": "Work better. Stay in your flow."
+    },
+    "connect": {
+      "title": "Connect",
+      "body": "Meet better. Build meaningful relationships."
+    },
+    "move": {
+      "title": "Move",
+      "body": "Live better. Keep progressing everyday."
+    }
   },
   "day": {
     "eyebrow": "The Tedja experience",
     "title": "Your day, your stride.",
     "body": "From your first sip in the morning to your plans at night. We're here for every part of your day.",
     "cta": "See the experience",
-    "morning": { "label": "Morning", "title": "Focus", "body": "Great coffee to start your day with clarity." },
-    "afternoon": { "label": "Afternoon", "title": "Connect", "body": "Good place for meetings and great ideas." },
-    "evening": { "label": "Evening", "title": "Community", "body": "Meet people, share stories, create memories." }
+    "morning": {
+      "label": "Morning",
+      "title": "Focus",
+      "body": "Great coffee to start your day with clarity."
+    },
+    "afternoon": {
+      "label": "Afternoon",
+      "title": "Connect",
+      "body": "Good place for meetings and great ideas."
+    },
+    "evening": {
+      "label": "Evening",
+      "title": "Community",
+      "body": "Meet people, share stories, create memories."
+    }
   },
   "picks": {
     "eyebrow": "Tedja picks",
@@ -94,7 +160,11 @@
     "title": "Good coffee. Good energy.",
     "body": "Crafted to fuel your focus, your meetings and your evenings.",
     "all": "All",
-    "categories": { "coffee": "Coffee", "non-coffee": "Non-coffee", "food": "Food" },
+    "categories": {
+      "coffee": "Coffee",
+      "non-coffee": "Non-coffee",
+      "food": "Food"
+    },
     "pick": "Tedja pick",
     "note": "Menu and availability may vary by location."
   },
@@ -148,5 +218,287 @@
     "title": "Lost your stride?",
     "body": "The page you're looking for doesn't exist or has moved.",
     "cta": "Back to home"
+  },
+  "forms": {
+    "required": "This field is required.",
+    "ratingRequired": "Please choose a rating.",
+    "invalidEmail": "Please enter a valid email address.",
+    "outOfRange": "Please enter a number between {min} and {max}.",
+    "optional": "optional",
+    "choose": "Choose one",
+    "requiredNote": "Fields marked * are required.",
+    "sendAnother": "Send another message",
+    "ratingValue": "{score} out of 5",
+    "fields": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone / WhatsApp",
+      "company": "Company / organisation",
+      "message": "Message",
+      "topic": "Topic",
+      "location": "Preferred location",
+      "date": "Event date",
+      "guests": "Number of guests",
+      "eventType": "Event type",
+      "collabType": "Collaboration type",
+      "position": "Position",
+      "portfolio": "CV / portfolio link",
+      "rating": "How was your visit?",
+      "visitDate": "Visit date",
+      "anyLocation": "Any location",
+      "other": "Other"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About Tedja",
+      "title": "Creating good strides.",
+      "body": "A transition space for people who keep moving."
+    },
+    "story": {
+      "eyebrow": "Our story",
+      "title": "A place between where you were and where you're going.",
+      "p1": "Tedja is a coffee shop that works as a transition space across strategic points in Bandung — serving functional food and drinks in an environment that supports your productivity and daily progress.",
+      "p2": "Creating Good Strides represents our commitment to be a support system: a space that actively helps every individual go beyond their limits at their own balanced rhythm.",
+      "p3": "From the first espresso in the morning to late conversations at night, every Tedja is designed to help you focus, connect and keep moving."
+    },
+    "stats": {
+      "locations": "Locations in Bandung",
+      "communities": "Communities",
+      "open": "Open from",
+      "city": "Home city"
+    },
+    "cta": {
+      "title": "Find your Tedja.",
+      "body": "Visit one of our spots and make it part of your stride.",
+      "primary": "Find a Tedja",
+      "secondary": "Join the community"
+    }
+  },
+  "careers": {
+    "hero": {
+      "eyebrow": "Careers",
+      "title": "Grow your stride with us.",
+      "body": "Join the people who make every Tedja feel like home."
+    },
+    "why": {
+      "eyebrow": "Why Tedja",
+      "title": "More than a job."
+    },
+    "perks": {
+      "learn": {
+        "title": "Learn the craft",
+        "body": "Coffee and kitchen training to sharpen your skills."
+      },
+      "grow": {
+        "title": "Room to grow",
+        "body": "Clear paths from crew to supervisor as we open new spots."
+      },
+      "community": {
+        "title": "Be part of the community",
+        "body": "Work alongside the clubs, makers and events that fill our spaces."
+      },
+      "team": {
+        "title": "A team that cares",
+        "body": "We look after each other, on and off shift."
+      }
+    },
+    "roles": {
+      "eyebrow": "Open roles",
+      "title": "Find your role.",
+      "empty": "No open roles right now — send us your details anyway.",
+      "apply": "Apply"
+    },
+    "apply": {
+      "eyebrow": "Apply",
+      "title": "Tell us about you.",
+      "body": "Send your details and we'll reach out when there's a fit.",
+      "submit": "Send application",
+      "successTitle": "Application received",
+      "successBody": "Thank you for your interest in Tedja. Our team will review your details and get in touch."
+    },
+    "types": {
+      "fullTime": "Full-time",
+      "partTime": "Part-time"
+    }
+  },
+  "press": {
+    "hero": {
+      "eyebrow": "Press",
+      "title": "Tedja in the press.",
+      "body": "Brand facts, assets and media contact in one place."
+    },
+    "facts": {
+      "eyebrow": "At a glance",
+      "title": "Tedja Coffee in brief.",
+      "tagline": "Tagline",
+      "taglineValue": "For your stride.",
+      "promise": "Brand promise",
+      "promiseValue": "Creating Good Strides",
+      "locations": "Locations",
+      "locationsValue": "{count} spots across Bandung",
+      "city": "Based in",
+      "cityValue": "Bandung, Indonesia"
+    },
+    "assets": {
+      "eyebrow": "Brand assets",
+      "title": "Logo & colours.",
+      "body": "Use the logo in Fired Brick on light backgrounds and in Shell White or white on Fired Brick or dark backgrounds. Do not stretch, outline or recolour it.",
+      "onLight": "On light",
+      "onBrick": "On Fired Brick",
+      "onShell": "On Shell White",
+      "primary": "Primary colours",
+      "secondary": "Secondary colours"
+    },
+    "cta": {
+      "title": "Writing about Tedja?",
+      "body": "For interviews, images or the full press kit, contact our team.",
+      "primary": "Contact us"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Say hello.",
+      "body": "Questions, ideas or just want to share your stride? We'd love to hear from you."
+    },
+    "channels": {
+      "eyebrow": "Reach us",
+      "title": "Find us where you are.",
+      "visit": {
+        "title": "Visit a Tedja",
+        "body": "Six spots across Bandung, open from 07:00."
+      },
+      "instagram": {
+        "title": "Instagram",
+        "body": "Daily stories, events and new menu drops."
+      },
+      "tiktok": {
+        "title": "TikTok",
+        "body": "Behind the bar and around the community."
+      }
+    },
+    "form": {
+      "eyebrow": "Send a message",
+      "title": "How can we help?",
+      "submit": "Send message",
+      "successTitle": "Message sent",
+      "successBody": "Thanks for reaching out. We'll get back to you as soon as we can."
+    },
+    "topics": {
+      "general": "General question",
+      "partnership": "Partnership",
+      "press": "Press & media",
+      "event": "Private event",
+      "careers": "Careers",
+      "feedback": "Feedback"
+    }
+  },
+  "workWithUs": {
+    "hero": {
+      "eyebrow": "Work with us",
+      "title": "Let's make something together.",
+      "body": "Brands, communities and creators — Tedja is a space built for collaboration."
+    },
+    "types": {
+      "eyebrow": "Ways to collaborate",
+      "title": "Build it with Tedja.",
+      "brand": {
+        "title": "Brand collaboration",
+        "body": "Co-created drinks, merchandise and campaigns."
+      },
+      "community": {
+        "title": "Community partnership",
+        "body": "Regular meetups, clubs and classes hosted at our spots."
+      },
+      "popup": {
+        "title": "Pop-ups & activations",
+        "body": "Showcase your product or launch in front of our guests."
+      },
+      "corporate": {
+        "title": "Corporate gatherings",
+        "body": "Team sessions and offsites with coffee to match."
+      }
+    },
+    "steps": {
+      "eyebrow": "How it works",
+      "title": "Three simple steps.",
+      "one": {
+        "title": "Share your idea",
+        "body": "Tell us who you are and what you have in mind."
+      },
+      "two": {
+        "title": "We review together",
+        "body": "Our team gets in touch to shape the details."
+      },
+      "three": {
+        "title": "Make it happen",
+        "body": "We plan, prepare and bring it to life at Tedja."
+      }
+    },
+    "form": {
+      "eyebrow": "Start a conversation",
+      "title": "Tell us your idea.",
+      "submit": "Send proposal",
+      "successTitle": "Proposal received",
+      "successBody": "Thanks for thinking of Tedja. Our partnerships team will review your idea and reach out."
+    }
+  },
+  "privateEvent": {
+    "hero": {
+      "eyebrow": "Private event",
+      "title": "Host your moment at Tedja.",
+      "body": "Meetings, celebrations and gatherings — with good coffee and good energy."
+    },
+    "types": {
+      "eyebrow": "Occasions",
+      "title": "Made for every gathering.",
+      "meeting": {
+        "title": "Meetings & workshops",
+        "body": "Focused sessions for teams and classes."
+      },
+      "celebration": {
+        "title": "Celebrations",
+        "body": "Birthdays, farewells and milestones."
+      },
+      "community": {
+        "title": "Community gatherings",
+        "body": "Meetups, ride-outs and club nights."
+      },
+      "launch": {
+        "title": "Launches & brand events",
+        "body": "Introduce your product in a space with character."
+      }
+    },
+    "included": {
+      "eyebrow": "What we offer",
+      "title": "Everything you need.",
+      "space": "Reserved area at your chosen location",
+      "food": "Food & beverage packages",
+      "team": "Help from our team on the day",
+      "flexible": "Flexible setup for your format"
+    },
+    "form": {
+      "eyebrow": "Reservation request",
+      "title": "Plan your event.",
+      "submit": "Request reservation",
+      "successTitle": "Request received",
+      "successBody": "Thanks! Our team will check availability and contact you to confirm the details."
+    }
+  },
+  "feedback": {
+    "hero": {
+      "eyebrow": "Feedback",
+      "title": "How was your stride?",
+      "body": "Every visit helps us get better. Tell us what you loved and what we can improve."
+    },
+    "form": {
+      "eyebrow": "Your visit",
+      "title": "Share your experience.",
+      "body": "Your feedback goes straight to the team at each location.",
+      "submit": "Send feedback",
+      "successTitle": "Thank you!",
+      "successBody": "We appreciate you taking the time. Your feedback helps us create better strides."
+    }
   }
 }
