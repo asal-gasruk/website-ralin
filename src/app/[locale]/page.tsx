@@ -6,6 +6,7 @@ import { DayStride } from "@/components/sections/DayStride";
 import { Hero } from "@/components/sections/Hero";
 import { JournalPreview } from "@/components/sections/JournalPreview";
 import { LocationsPreview } from "@/components/sections/LocationsPreview";
+import { MembershipTeaser } from "@/components/sections/MembershipTeaser";
 import { Picks } from "@/components/sections/Picks";
 import { Pillars } from "@/components/sections/Pillars";
 import type { Locale } from "@/i18n/routing";
@@ -28,6 +29,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       <Picks />
       <LocationsPreview />
       <CommunityPreview />
+      <MembershipTeaser />
       <JournalPreview />
       <Closing />
     </>

@@ -51,6 +51,10 @@
     "feedback": {
       "title": "Feedback",
       "description": "Tell us about your visit to Tedja."
+    },
+    "membership": {
+      "title": "Membership",
+      "description": "Join Tedja Membership — earn points, birthday treats, member-only events and more."
     }
   },
   "nav": {
@@ -62,7 +66,8 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "home": "Tedja Coffee home",
-    "language": "Language"
+    "language": "Language",
+    "membership": "Membership"
   },
   "common": {
     "readMore": "Read more",
@@ -270,8 +275,13 @@
       "rating": "How was your visit?",
       "visitDate": "Visit date",
       "anyLocation": "Any location",
-      "other": "Other"
-    }
+      "other": "Other",
+      "whatsapp": "WhatsApp number",
+      "birthDate": "Date of birth",
+      "favoriteLocation": "Favourite Tedja"
+    },
+    "mustAgree": "Please tick this box to continue.",
+    "invalidPhone": "Please enter a valid phone number."
   },
   "about": {
     "hero": {
@@ -523,6 +533,105 @@
       "submit": "Send feedback",
       "successTitle": "Thank you!",
       "successBody": "We appreciate you taking the time. Your feedback helps us create better strides."
+    }
+  },
+  "membership": {
+    "hero": {
+      "eyebrow": "Tedja Membership",
+      "title": "More strides, more rewards.",
+      "body": "Join for free and turn every coffee, meeting and late-night conversation into points, perks and moments made for members.",
+      "cta": "Join now — it's free",
+      "secondary": "See the benefits"
+    },
+    "card": {
+      "holder": "Member",
+      "name": "Your name",
+      "badge": "Member"
+    },
+    "teaser": {
+      "eyebrow": "Tedja Membership",
+      "title": "Every visit counts.",
+      "body": "Collect points, get birthday treats and be first in line for new menus and member-only events.",
+      "cta": "Join membership"
+    },
+    "benefitsIntro": {
+      "eyebrow": "Member benefits",
+      "title": "Made for people who keep moving.",
+      "body": "Perks that grow with every stride you take with us."
+    },
+    "benefits": {
+      "points": {
+        "title": "Earn points every visit",
+        "body": "Collect points on every purchase at any Tedja location."
+      },
+      "birthday": {
+        "title": "Birthday treat",
+        "body": "A little something from us to celebrate your day."
+      },
+      "events": {
+        "title": "Member-only events",
+        "body": "Priority access to community sessions, workshops and club nights."
+      },
+      "early": {
+        "title": "First taste of new menus",
+        "body": "Try new drinks and dishes before everyone else."
+      },
+      "rewards": {
+        "title": "Redeem rewards",
+        "body": "Turn your points into drinks, food and exclusive collectibles."
+      },
+      "community": {
+        "title": "Be part of the community",
+        "body": "Connect with the clubs and people that make Tedja what it is."
+      }
+    },
+    "steps": {
+      "eyebrow": "How it works",
+      "title": "Three steps to start.",
+      "register": {
+        "title": "Sign up",
+        "body": "Fill in the form below with your WhatsApp number."
+      },
+      "visit": {
+        "title": "Visit & earn",
+        "body": "Mention your number at the cashier to collect points."
+      },
+      "redeem": {
+        "title": "Redeem & enjoy",
+        "body": "Use your points for rewards and member perks."
+      }
+    },
+    "form": {
+      "eyebrow": "Register",
+      "title": "Become a member.",
+      "body": "It only takes a minute. We'll confirm your membership via WhatsApp.",
+      "submit": "Join membership",
+      "successTitle": "Welcome to Tedja!",
+      "successBody": "Your registration has been received. We'll send your member confirmation to your WhatsApp shortly.",
+      "terms": "I agree to the membership terms and the processing of my data for the Tedja membership programme.",
+      "marketing": "Send me news, promos and event invitations via WhatsApp."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Good to know.",
+      "items": {
+        "free": {
+          "q": "Is membership free?",
+          "a": "Yes. Joining Tedja Membership is free — just register with your WhatsApp number."
+        },
+        "points": {
+          "q": "How do I earn points?",
+          "a": "Mention your registered WhatsApp number at the cashier every time you order, and points are added to your account."
+        },
+        "where": {
+          "q": "Where can I use my membership?",
+          "a": "At every Tedja location across Bandung."
+        },
+        "existing": {
+          "q": "I already registered at the cashier. Do I need to sign up again?",
+          "a": "No. If you registered at one of our locations, you're already a member."
+        }
+      }
     }
   }
 }

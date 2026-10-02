@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { Icon } from "@/components/ui/Icon";
 import { cn } from "@/lib/cn";
 
-export type FieldType = "text" | "email" | "tel" | "textarea" | "select" | "date" | "number" | "rating";
+export type FieldType = "text" | "email" | "tel" | "textarea" | "select" | "date" | "number" | "rating" | "checkbox";
 
 export interface FieldOption {
   value: string;
@@ -36,13 +36,16 @@ interface InquiryFormProps {
 type Errors = Record<string, string>;
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+/** Nomor telepon: boleh diawali +, setelah dibersihkan berisi 9–15 digit */
+const PHONE_PATTERN = /^\+?[\d\s-]{9,20}$/;
+const PHONE_DIGITS = { min: 9, max: 15 };
 const RATING_SCALE = [1, 2, 3, 4, 5] as const;
 
 const inputClass =
   "w-full rounded-lg border border-brick/20 bg-white px-3.5 py-2.5 text-sm text-brick-950 placeholder:text-charcoal/40 transition-colors focus:border-brick focus:outline-none aria-[invalid=true]:border-rust";
 
 /**
- * Form pertanyaan generik (contact, private event, kolaborasi, feedback, lamaran).
+ * Form generik (contact, private event, kolaborasi, feedback, lamaran, membership).
  * Validasi di sisi klien; pengiriman belum terhubung ke backend.
  */
 export function InquiryForm({ fields, submitLabel, successTitle, successBody }: InquiryFormProps) {
@@ -56,9 +59,15 @@ export function InquiryForm({ fields, submitLabel, successTitle, successBody }: 
     for (const field of fields) {
       const value = String(data.get(field.name) ?? "").trim();
       if (field.required && !value) {
-        next[field.name] = field.type === "rating" ? t("ratingRequired") : t("required");
+        next[field.name] =
+          field.type === "rating" ? t("ratingRequired") : field.type === "checkbox" ? t("mustAgree") : t("required");
       } else if (value && field.type === "email" && !EMAIL_PATTERN.test(value)) {
         next[field.name] = t("invalidEmail");
+      } else if (value && field.type === "tel") {
+        const digits = value.replace(/\D/g, "").length;
+        if (!PHONE_PATTERN.test(value) || digits < PHONE_DIGITS.min || digits > PHONE_DIGITS.max) {
+          next[field.name] = t("invalidPhone");
+        }
       } else if (value && field.type === "number") {
         const number = Number(value);
         if ((field.min !== undefined && number < field.min) || (field.max !== undefined && number > field.max)) {
@@ -144,6 +153,18 @@ export function InquiryForm({ fields, submitLabel, successTitle, successBody }: 
                   ))}
                 </div>
               </fieldset>
+            ) : field.type === "checkbox" ? (
+              <label htmlFor={id} className="flex cursor-pointer items-start gap-3 text-sm leading-relaxed text-charcoal/80">
+                <input
+                  {...common}
+                  type="checkbox"
+                  className="mt-0.5 size-4 shrink-0 cursor-pointer rounded border-brick/30 accent-brick"
+                />
+                <span>
+                  {field.label}
+                  {field.required && <span className="text-rust"> *</span>}
+                </span>
+              </label>
             ) : (
               <>
                 <label htmlFor={id} className="mb-2 block text-xs font-semibold tracking-[0.12em] text-brick-950 uppercase">

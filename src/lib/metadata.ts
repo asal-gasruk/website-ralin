@@ -34,7 +34,15 @@ export function buildMetadata({ locale, path, title, description, image }: PageM
   };
 }
 
-export type InfoPageKey = "about" | "careers" | "press" | "contact" | "workWithUs" | "privateEvent" | "feedback";
+export type InfoPageKey =
+  | "about"
+  | "careers"
+  | "press"
+  | "contact"
+  | "workWithUs"
+  | "privateEvent"
+  | "feedback"
+  | "membership";
 
 /** generateMetadata untuk halaman informasi (judul & deskripsi dari messages `meta.<key>`). */
 export async function infoPageMetadata(

@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/cn";
 import { Icon, type IconName } from "./Icon";
 
-type Variant = "primary" | "outline-light" | "outline-brick" | "text" | "text-light";
+type Variant = "primary" | "accent" | "outline-light" | "outline-brick" | "text" | "text-light";
 
 type Size = "sm" | "md";
 
@@ -12,6 +12,7 @@ const base =
 
 const variants: Record<Variant, string> = {
   primary: "bg-brick text-shell hover:bg-rust",
+  accent: "bg-orange text-brick-950 hover:bg-shell",
   "outline-light": "border border-shell/60 text-shell hover:bg-shell hover:text-brick",
   "outline-brick": "border border-brick text-brick hover:bg-brick hover:text-shell",
   text: "text-brick hover:text-rust",

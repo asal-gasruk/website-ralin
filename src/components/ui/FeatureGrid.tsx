@@ -24,12 +24,14 @@ export function FeatureGrid({ items, columns = 3, className }: FeatureGridProps)
   return (
     <ul className={cn("reveal-stagger grid gap-4", columnClass[columns], className)}>
       {items.map((item) => (
-        <li key={item.title} className="rounded-xl border border-brick/10 bg-white/60 p-5 sm:p-6">
-          <span className="grid size-10 place-items-center rounded-full bg-brick text-shell">
+        <li key={item.title} className="flex gap-4 rounded-xl border border-brick/10 bg-white/60 p-4 sm:block sm:p-6">
+          <span className="grid size-10 shrink-0 place-items-center rounded-full bg-brick text-shell">
             <Icon name={item.icon} className="size-5" />
           </span>
-          <h3 className="mt-4 text-sm tracking-[0.12em] text-brick-950 uppercase">{item.title}</h3>
-          <p className="mt-2 text-sm leading-relaxed text-charcoal/75">{item.body}</p>
+          <div>
+            <h3 className="text-sm tracking-[0.12em] text-brick-950 uppercase sm:mt-4">{item.title}</h3>
+            <p className="mt-1 text-sm leading-relaxed text-charcoal/75 sm:mt-2">{item.body}</p>
+          </div>
         </li>
       ))}
     </ul>

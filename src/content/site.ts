@@ -10,6 +10,7 @@ export const mainNav = [
   { key: "locations", href: "/locations" },
   { key: "community", href: "/community" },
   { key: "journal", href: "/journal" },
+  { key: "membership", href: "/membership" },
 ] as const;
 
 export const companyNav = [

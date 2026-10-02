@@ -51,6 +51,10 @@
     "feedback": {
       "title": "Masukan",
       "description": "Ceritakan kunjunganmu ke Tedja."
+    },
+    "membership": {
+      "title": "Membership",
+      "description": "Gabung Tedja Membership — kumpulkan poin, hadiah ulang tahun, acara khusus member, dan banyak lagi."
     }
   },
   "nav": {
@@ -62,7 +66,8 @@
     "openMenu": "Buka menu",
     "closeMenu": "Tutup menu",
     "home": "Beranda Tedja Coffee",
-    "language": "Bahasa"
+    "language": "Bahasa",
+    "membership": "Membership"
   },
   "common": {
     "readMore": "Baca selengkapnya",
@@ -270,8 +275,13 @@
       "rating": "Bagaimana kunjunganmu?",
       "visitDate": "Tanggal kunjungan",
       "anyLocation": "Lokasi mana saja",
-      "other": "Lainnya"
-    }
+      "other": "Lainnya",
+      "whatsapp": "Nomor WhatsApp",
+      "birthDate": "Tanggal lahir",
+      "favoriteLocation": "Tedja favorit"
+    },
+    "mustAgree": "Centang kotak ini untuk melanjutkan.",
+    "invalidPhone": "Masukkan nomor telepon yang valid."
   },
   "about": {
     "hero": {
@@ -523,6 +533,105 @@
       "submit": "Kirim masukan",
       "successTitle": "Terima kasih!",
       "successBody": "Kami menghargai waktumu. Masukanmu membantu kami menciptakan langkah yang lebih baik."
+    }
+  },
+  "membership": {
+    "hero": {
+      "eyebrow": "Tedja Membership",
+      "title": "Makin sering melangkah, makin banyak hadiah.",
+      "body": "Gabung gratis dan ubah setiap kopi, rapat, dan obrolan larut malam menjadi poin, keuntungan, dan momen khusus member.",
+      "cta": "Gabung sekarang — gratis",
+      "secondary": "Lihat keuntungannya"
+    },
+    "card": {
+      "holder": "Member",
+      "name": "Nama kamu",
+      "badge": "Member"
+    },
+    "teaser": {
+      "eyebrow": "Tedja Membership",
+      "title": "Setiap kunjungan berarti.",
+      "body": "Kumpulkan poin, dapatkan hadiah ulang tahun, dan jadi yang pertama mencoba menu baru serta acara khusus member.",
+      "cta": "Gabung membership"
+    },
+    "benefitsIntro": {
+      "eyebrow": "Keuntungan member",
+      "title": "Untuk kamu yang terus bergerak.",
+      "body": "Keuntungan yang bertambah di setiap langkahmu bersama kami."
+    },
+    "benefits": {
+      "points": {
+        "title": "Poin setiap kunjungan",
+        "body": "Kumpulkan poin dari setiap pembelian di semua lokasi Tedja."
+      },
+      "birthday": {
+        "title": "Hadiah ulang tahun",
+        "body": "Sedikit kejutan dari kami untuk merayakan harimu."
+      },
+      "events": {
+        "title": "Acara khusus member",
+        "body": "Akses prioritas ke sesi komunitas, workshop, dan malam klub."
+      },
+      "early": {
+        "title": "Cicipi menu baru lebih dulu",
+        "body": "Coba minuman dan hidangan baru sebelum yang lain."
+      },
+      "rewards": {
+        "title": "Tukar hadiah",
+        "body": "Tukarkan poinmu dengan minuman, makanan, dan koleksi eksklusif."
+      },
+      "community": {
+        "title": "Jadi bagian komunitas",
+        "body": "Terhubung dengan klub dan orang-orang yang membentuk Tedja."
+      }
+    },
+    "steps": {
+      "eyebrow": "Cara kerja",
+      "title": "Tiga langkah untuk mulai.",
+      "register": {
+        "title": "Daftar",
+        "body": "Isi form di bawah dengan nomor WhatsApp-mu."
+      },
+      "visit": {
+        "title": "Datang & kumpulkan",
+        "body": "Sebutkan nomormu di kasir untuk mengumpulkan poin."
+      },
+      "redeem": {
+        "title": "Tukar & nikmati",
+        "body": "Gunakan poinmu untuk hadiah dan keuntungan member."
+      }
+    },
+    "form": {
+      "eyebrow": "Daftar",
+      "title": "Jadi member sekarang.",
+      "body": "Hanya butuh semenit. Kami akan mengonfirmasi keanggotaanmu lewat WhatsApp.",
+      "submit": "Gabung membership",
+      "successTitle": "Selamat datang di Tedja!",
+      "successBody": "Pendaftaranmu sudah kami terima. Konfirmasi member akan kami kirim ke WhatsApp-mu segera.",
+      "terms": "Saya menyetujui syarat membership dan pemrosesan data saya untuk program membership Tedja.",
+      "marketing": "Kirimi saya kabar, promo, dan undangan acara lewat WhatsApp."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Yang perlu kamu tahu.",
+      "items": {
+        "free": {
+          "q": "Apakah membership gratis?",
+          "a": "Ya. Bergabung dengan Tedja Membership gratis — cukup daftar dengan nomor WhatsApp-mu."
+        },
+        "points": {
+          "q": "Bagaimana cara mendapatkan poin?",
+          "a": "Sebutkan nomor WhatsApp yang terdaftar di kasir setiap kali memesan, dan poin akan masuk ke akunmu."
+        },
+        "where": {
+          "q": "Di mana membership bisa digunakan?",
+          "a": "Di semua lokasi Tedja di Bandung."
+        },
+        "existing": {
+          "q": "Saya sudah daftar di kasir. Perlu daftar lagi?",
+          "a": "Tidak perlu. Jika sudah mendaftar di salah satu lokasi kami, kamu sudah menjadi member."
+        }
+      }
     }
   }
 }
