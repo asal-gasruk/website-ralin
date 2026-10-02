@@ -3,15 +3,37 @@ import type { Locale } from "@/i18n/routing";
 /** Nilai yang punya versi per bahasa. */
 export type Localized<T = string> = Record<Locale, T>;
 
-export type MenuCategory = "coffee" | "non-coffee" | "food";
-
-export interface MenuItem {
+/** Item unggulan di section "Tedja Picks" homepage. */
+export interface Pick {
   slug: string;
   name: string;
-  category: MenuCategory;
   description: Localized;
+  image: string;
+}
+
+export type MenuGroup = "drinks" | "food";
+export type MenuTag = "bestSeller" | "recommended" | "spicy";
+
+export interface MenuEntry {
+  name: string;
+  /** Harga dalam ribu rupiah, sesuai cetakan menu */
+  price: number;
+  /** Pilihan harga (mis. jenis biji Filter Coffee) */
+  priceOptions?: Array<{ label: string; price: number }>;
+  serve?: "hotIce" | "ice";
+  options?: string;
+  description?: string;
+  kcal?: string;
+  protein?: string;
   image?: string;
-  isPick?: boolean;
+  tags?: MenuTag[];
+}
+
+export interface MenuSection {
+  slug: string;
+  group: MenuGroup;
+  title: string;
+  items: MenuEntry[];
 }
 
 export interface Location {

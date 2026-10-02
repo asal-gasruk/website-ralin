@@ -20,6 +20,11 @@ export function mapsEmbedUrl(query: string, locale: Locale, zoom = 16): string {
   return `https://maps.google.com/maps?${params.toString()}`;
 }
 
+/** Harga menu dalam ribu rupiah → "37K" */
+export function formatPrice(price: number): string {
+  return `${price}K`;
+}
+
 export function formatDate(iso: string, locale: Locale): string {
   return new Intl.DateTimeFormat(locale === "id" ? "id-ID" : "en-GB", {
     day: "numeric",

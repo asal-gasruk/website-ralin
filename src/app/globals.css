@@ -32,6 +32,9 @@
   --animate-fade-in: fade-in 0.25s ease-out backwards;
   /* Loader navigasi: lengkung "mengaduk" di atas mangkuk */
   --animate-stir: stir 1.1s ease-in-out infinite;
+  /* Buku menu (mobile): halaman masuk dari arah geser */
+  --animate-page-next: page-next 0.35s ease-out both;
+  --animate-page-prev: page-prev 0.35s ease-out both;
   --animate-bob: bob 1.1s ease-in-out infinite;
 
   @keyframes fade-up {
@@ -67,6 +70,20 @@
     50% {
       transform: rotate(3deg);
       opacity: 1;
+    }
+  }
+
+  @keyframes page-next {
+    from {
+      opacity: 0;
+      transform: translateX(24%) rotateY(-12deg);
+    }
+  }
+
+  @keyframes page-prev {
+    from {
+      opacity: 0;
+      transform: translateX(-24%) rotateY(12deg);
     }
   }
 

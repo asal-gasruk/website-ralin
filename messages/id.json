@@ -163,15 +163,31 @@
   "menuPage": {
     "eyebrow": "Menu",
     "title": "Kopi enak. Energi baik.",
-    "body": "Diracik untuk menemani fokusmu, rapatmu, dan malammu.",
-    "all": "Semua",
-    "categories": {
-      "coffee": "Kopi",
-      "non-coffee": "Non-kopi",
-      "food": "Makanan"
+    "body": "Signature drinks, pilihan barista, kopi harian, dan hidangan mengenyangkan — diracik untuk menemani fokus, rapat, dan malammu.",
+    "note": "Menu dan ketersediaan dapat berbeda di setiap lokasi.",
+    "drinks": "Minuman",
+    "food": "Makanan",
+    "browse": "Jelajahi menu",
+    "itemsCount": "{count} item",
+    "locationNote": "Menu untuk Tedja Margahayu, Summarecon & Antapani.",
+    "priceNote": "Harga dalam ribu rupiah (K). Harga dan ketersediaan dapat berubah.",
+    "addOns": "Tambahan",
+    "hotIce": "Panas / Dingin",
+    "ice": "Dingin saja",
+    "tags": {
+      "bestSeller": "Best Seller",
+      "recommended": "Rekomendasi",
+      "spicy": "Pedas"
     },
-    "pick": "Pilihan Tedja",
-    "note": "Menu dan ketersediaan dapat berbeda di setiap lokasi."
+    "book": {
+      "prev": "Halaman sebelumnya",
+      "next": "Halaman berikutnya",
+      "first": "Kembali ke sampul",
+      "page": "Halaman {page} dari {total}",
+      "pages": "Halaman {pages} dari {total}",
+      "hintDesktop": "Klik halaman atau gunakan tombol ← → untuk membalik.",
+      "hintMobile": "Geser ke kiri atau kanan untuk membalik halaman."
+    }
   },
   "locationsPage": {
     "eyebrow": "Lokasi",

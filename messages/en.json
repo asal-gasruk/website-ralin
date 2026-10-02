@@ -163,15 +163,31 @@
   "menuPage": {
     "eyebrow": "Menu",
     "title": "Good coffee. Good energy.",
-    "body": "Crafted to fuel your focus, your meetings and your evenings.",
-    "all": "All",
-    "categories": {
-      "coffee": "Coffee",
-      "non-coffee": "Non-coffee",
-      "food": "Food"
+    "body": "Signature drinks, barista choices, everyday coffee and hearty plates — crafted to fuel your focus, meetings and evenings.",
+    "note": "Menu and availability may vary by location.",
+    "drinks": "Drinks",
+    "food": "Food",
+    "browse": "Browse the menu",
+    "itemsCount": "{count} items",
+    "locationNote": "Menu for Tedja Margahayu, Summarecon & Antapani.",
+    "priceNote": "Prices in thousand rupiah (K). Prices and availability may change.",
+    "addOns": "Add-on",
+    "hotIce": "Hot / Ice",
+    "ice": "Ice only",
+    "tags": {
+      "bestSeller": "Best Seller",
+      "recommended": "Recommended",
+      "spicy": "Spicy"
     },
-    "pick": "Tedja pick",
-    "note": "Menu and availability may vary by location."
+    "book": {
+      "prev": "Previous page",
+      "next": "Next page",
+      "first": "Back to cover",
+      "page": "Page {page} of {total}",
+      "pages": "Pages {pages} of {total}",
+      "hintDesktop": "Click a page or use the ← → keys to turn pages.",
+      "hintMobile": "Swipe left or right to turn pages."
+    }
   },
   "locationsPage": {
     "eyebrow": "Locations",

@@ -3,13 +3,12 @@ import { MenuCard } from "@/components/cards/MenuCard";
 import { ButtonLink } from "@/components/ui/Button";
 import { SectionIntro } from "@/components/ui/SectionIntro";
 import { SplitSection } from "@/components/ui/SplitSection";
-import { menuItems } from "@/content/menu";
+import { picks } from "@/content/picks";
 import { localize } from "@/lib/localize";
 
 export function Picks() {
   const t = useTranslations("picks");
   const locale = useLocale();
-  const picks = menuItems.filter((item) => item.isPick);
 
   return (
     <SplitSection
