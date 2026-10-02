@@ -26,11 +26,24 @@ export interface Location {
   isFeatured?: boolean;
 }
 
-export type CommunityIcon = "padel" | "workshop" | "creative" | "business" | "music" | "automotive";
+export type CommunityIcon =
+  | "padel"
+  | "running"
+  | "strength"
+  | "workshop"
+  | "creative"
+  | "business"
+  | "music"
+  | "automotive";
+
+export type CommunityCategory = "sports" | "automotive" | "creative" | "business" | "music";
 
 export interface Community {
   slug: string;
+  category: CommunityCategory;
   icon: CommunityIcon;
+  /** Ditampilkan di section Community pada homepage */
+  isFeatured?: boolean;
   name: Localized;
   tagline: Localized;
   description: Localized;

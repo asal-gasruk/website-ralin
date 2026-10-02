@@ -184,7 +184,31 @@
     "title": "Orang-oranglah yang membentuk tempat.",
     "body": "Dari lapangan padel hingga open mic, selalu ada yang bergerak di Tedja.",
     "ctaTitle": "Ingin memulai sesuatu bersama kami?",
-    "ctaBody": "Kami senang menjadi tuan rumah komunitas. Hubungi kami dan mari wujudkan."
+    "ctaBody": "Kami senang menjadi tuan rumah komunitas. Hubungi kami dan mari wujudkan.",
+    "categories": {
+      "sports": {
+        "title": "Olahraga",
+        "body": "Bergerak bersama — di lapangan, di jalan, dan saat latihan."
+      },
+      "automotive": {
+        "title": "Otomotif",
+        "body": "Pengendara dan pecinta mobil yang memulai dan mengakhiri perjalanan di Tedja."
+      },
+      "creative": {
+        "title": "Kreatif & Belajar",
+        "body": "Workshop dan lingkar kreatif untuk belajar, berkarya, dan berbagi."
+      },
+      "business": {
+        "title": "Bisnis",
+        "body": "Founder dan profesional yang membangun peluang sambil ngopi."
+      },
+      "music": {
+        "title": "Musik",
+        "body": "Sesi live dan open mic dari talenta lokal Bandung."
+      }
+    },
+    "jumpTo": "Jelajahi per kategori",
+    "count": "{count} komunitas"
   },
   "journalPage": {
     "eyebrow": "Jurnal",

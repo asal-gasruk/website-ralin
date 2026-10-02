@@ -1,8 +1,19 @@
-import type { Community } from "./types";
+import type { Community, CommunityCategory, CommunityIcon } from "./types";
+
+/** Urutan & ikon kategori komunitas (label & deskripsi ada di messages `communityPage.categories`). */
+export const communityCategories: Array<{ key: CommunityCategory; icon: CommunityIcon }> = [
+  { key: "sports", icon: "padel" },
+  { key: "automotive", icon: "automotive" },
+  { key: "creative", icon: "creative" },
+  { key: "business", icon: "business" },
+  { key: "music", icon: "music" },
+];
 
 export const communities: Community[] = [
   {
     slug: "padel-club",
+    category: "sports",
+    isFeatured: true,
     icon: "padel",
     name: { en: "Padel Club", id: "Padel Club" },
     tagline: { en: "Play, connect, have fun.", id: "Main, terhubung, bersenang-senang." },
@@ -14,6 +25,8 @@ export const communities: Community[] = [
   },
   {
     slug: "workshop",
+    category: "creative",
+    isFeatured: true,
     icon: "workshop",
     name: { en: "Workshop", id: "Workshop" },
     tagline: { en: "Learn new skills, grow together.", id: "Belajar keterampilan baru, tumbuh bersama." },
@@ -25,6 +38,8 @@ export const communities: Community[] = [
   },
   {
     slug: "creative-community",
+    category: "creative",
+    isFeatured: true,
     icon: "creative",
     name: { en: "Creative Community", id: "Komunitas Kreatif" },
     tagline: { en: "Create, inspire, collaborate.", id: "Berkarya, menginspirasi, berkolaborasi." },
@@ -36,6 +51,8 @@ export const communities: Community[] = [
   },
   {
     slug: "business-gathering",
+    category: "business",
+    isFeatured: true,
     icon: "business",
     name: { en: "Business Gathering", id: "Business Gathering" },
     tagline: { en: "Meet, share, build opportunities.", id: "Bertemu, berbagi, membangun peluang." },
@@ -47,6 +64,8 @@ export const communities: Community[] = [
   },
   {
     slug: "music",
+    category: "music",
+    isFeatured: true,
     icon: "music",
     name: { en: "Music", id: "Musik" },
     tagline: { en: "Good music, good vibes.", id: "Musik bagus, suasana bagus." },
@@ -58,6 +77,8 @@ export const communities: Community[] = [
   },
   {
     slug: "automotive-community",
+    category: "automotive",
+    isFeatured: true,
     icon: "automotive",
     name: { en: "Automotive Community", id: "Komunitas Otomotif" },
     tagline: { en: "Ride together, share the passion.", id: "Berkendara bersama, berbagi semangat." },
@@ -66,5 +87,30 @@ export const communities: Community[] = [
       id: "Morning ride dan kopdar untuk pengendara dan pecinta mobil, berangkat dan berakhir di Tedja.",
     },
     image: "/images/com-automotive.webp",
+  },
+  // TODO: verifikasi dengan tim komunitas — diambil dari materi brand (poster Strength Training & foto lari bersama)
+  {
+    slug: "running-club",
+    category: "sports",
+    icon: "running",
+    name: { en: "Running Club", id: "Running Club" },
+    tagline: { en: "Run together, refuel together.", id: "Lari bersama, isi energi bersama." },
+    description: {
+      en: "Group runs around Bandung for every pace, finishing with coffee at Tedja.",
+      id: "Lari bersama keliling Bandung untuk semua pace, ditutup dengan ngopi di Tedja.",
+    },
+    image: "/images/journal-creative-community.webp",
+  },
+  {
+    slug: "strength-training",
+    category: "sports",
+    icon: "strength",
+    name: { en: "Strength Training", id: "Strength Training" },
+    tagline: { en: "Train hard, recover right.", id: "Latihan serius, pemulihan tepat." },
+    description: {
+      en: "Outdoor strength and conditioning sessions led by coaches, open to all levels.",
+      id: "Sesi strength dan conditioning di luar ruangan bersama coach, terbuka untuk semua level.",
+    },
+    image: "/images/journal-better-morning.webp",
   },
 ];

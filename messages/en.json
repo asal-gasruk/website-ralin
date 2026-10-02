@@ -184,7 +184,31 @@
     "title": "People make the place.",
     "body": "From padel courts to open mics, there's always something moving at Tedja.",
     "ctaTitle": "Want to start something with us?",
-    "ctaBody": "We love hosting communities. Reach out and let's make it happen."
+    "ctaBody": "We love hosting communities. Reach out and let's make it happen.",
+    "categories": {
+      "sports": {
+        "title": "Sports",
+        "body": "Move together — on the court, on the road and in training."
+      },
+      "automotive": {
+        "title": "Automotive",
+        "body": "Riders and car enthusiasts who start and end their journeys at Tedja."
+      },
+      "creative": {
+        "title": "Creative & Learning",
+        "body": "Workshops and creative circles to learn, make and share."
+      },
+      "business": {
+        "title": "Business",
+        "body": "Founders and professionals building opportunities over coffee."
+      },
+      "music": {
+        "title": "Music",
+        "body": "Live sessions and open mics from Bandung's local talents."
+      }
+    },
+    "jumpTo": "Browse by category",
+    "count": "{count, plural, one {# community} other {# communities}}"
   },
   "journalPage": {
     "eyebrow": "Journal",

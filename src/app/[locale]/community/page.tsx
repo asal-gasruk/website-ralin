@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { DotPattern } from "@/components/brand/Supergraphic";
+import { CommunityCard } from "@/components/cards/CommunityCard";
 import { PageHero } from "@/components/sections/PageHero";
 import { ExternalButtonLink } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
-import { communities } from "@/content/community";
+import { communities, communityCategories } from "@/content/community";
 import { socials } from "@/content/site";
 import type { Locale } from "@/i18n/routing";
-import { cn } from "@/lib/cn";
 import { localize } from "@/lib/localize";
 import { buildMetadata } from "@/lib/metadata";
 
@@ -24,36 +23,72 @@ export default async function CommunityPage({ params }: PageProps<"/[locale]/com
   const t = await getTranslations("communityPage");
   const tCommon = await getTranslations("common");
 
+  // Hanya kategori yang punya komunitas, sesuai urutan di communityCategories
+  const groups = communityCategories
+    .map((category) => ({
+      ...category,
+      items: communities.filter((community) => community.category === category.key),
+    }))
+    .filter((group) => group.items.length > 0);
+
   return (
     <>
       <PageHero eyebrow={t("eyebrow")} title={t("title")} body={t("body")} />
 
-      <section className="container-site space-y-12 py-12 sm:space-y-24 sm:py-24">
-        {communities.map((community, index) => (
-          <article key={community.slug} className="reveal grid items-center gap-5 md:grid-cols-2 md:gap-12">
-            <div
-              className={cn(
-                "relative aspect-[16/10] overflow-hidden rounded-xl bg-brick md:aspect-[4/3]",
-                index % 2 === 1 && "md:order-2",
-              )}
-            >
-              <Image
-                src={community.image}
-                alt={localize(community.name, locale)}
-                fill
-                sizes="(min-width: 768px) 45vw, 90vw"
-                className="object-cover"
-              />
+      {/* Navigasi kategori, menempel di bawah header saat menggulir */}
+      <nav
+        aria-label={t("jumpTo")}
+        className="sticky top-16 z-30 border-b border-brick/10 bg-shell-50/90 backdrop-blur lg:top-20"
+      >
+        <ul className="container-site flex gap-2 overflow-x-auto py-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          {groups.map((group) => (
+            <li key={group.key} className="shrink-0">
+              <a
+                href={`#${group.key}`}
+                className="inline-flex items-center gap-2 rounded-full border border-brick/20 bg-white/70 px-3.5 py-2 text-[0.6875rem] font-semibold tracking-[0.12em] text-brick uppercase transition-colors hover:border-brick hover:bg-brick hover:text-shell"
+              >
+                <Icon name={group.icon} className="size-3.5" />
+                {t(`categories.${group.key}.title`)}
+                <span className="text-brick/50">{group.items.length}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <div className="container-site space-y-14 py-12 sm:space-y-20 sm:py-20">
+        {groups.map((group) => (
+          <section key={group.key} id={group.key} aria-labelledby={`${group.key}-title`} className="scroll-mt-36 lg:scroll-mt-40">
+            <header className="reveal flex flex-wrap items-end justify-between gap-4 border-b border-brick/10 pb-5">
+              <div className="flex items-start gap-4">
+                <span className="grid size-12 shrink-0 place-items-center rounded-full bg-brick text-shell">
+                  <Icon name={group.icon} className="size-6" />
+                </span>
+                <div>
+                  <h2 id={`${group.key}-title`} className="text-2xl text-brick-950 uppercase sm:text-3xl">
+                    {t(`categories.${group.key}.title`)}
+                  </h2>
+                  <p className="mt-1 max-w-xl text-sm text-charcoal/75 sm:text-base">{t(`categories.${group.key}.body`)}</p>
+                </div>
+              </div>
+              <p className="eyebrow text-[0.625rem] text-brick/70">{t("count", { count: group.items.length })}</p>
+            </header>
+
+            <div className="reveal-stagger mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {group.items.map((community) => (
+                <CommunityCard
+                  key={community.slug}
+                  name={localize(community.name, locale)}
+                  tagline={localize(community.tagline, locale)}
+                  description={localize(community.description, locale)}
+                  image={community.image}
+                  icon={community.icon}
+                />
+              ))}
             </div>
-            <div>
-              <Icon name={community.icon} className="size-6 text-brick sm:size-7" />
-              <h2 className="mt-3 text-2xl text-brick-950 uppercase sm:mt-4 sm:text-4xl">{localize(community.name, locale)}</h2>
-              <p className="mt-1 font-display text-base text-brick sm:mt-2 sm:text-lg">{localize(community.tagline, locale)}</p>
-              <p className="mt-3 max-w-md text-sm leading-relaxed text-charcoal/80 sm:mt-4 sm:text-base">{localize(community.description, locale)}</p>
-            </div>
-          </article>
+          </section>
         ))}
-      </section>
+      </div>
 
       <section className="container-site pb-14 sm:pb-20">
         <div className="reveal relative isolate overflow-hidden rounded-2xl bg-botanical px-6 py-10 text-shell sm:px-12 sm:py-16">

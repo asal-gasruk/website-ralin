@@ -10,6 +10,7 @@ import { localize } from "@/lib/localize";
 export function CommunityPreview() {
   const t = useTranslations("community");
   const locale = useLocale();
+  const featured = communities.filter((community) => community.isFeatured);
 
   return (
     <SplitSection
@@ -27,7 +28,7 @@ export function CommunityPreview() {
       }
     >
       <CardRail className="sm:grid-cols-2 md:grid-cols-3">
-        {communities.map((community) => (
+        {featured.map((community) => (
           <PhotoCard
             key={community.slug}
             aspect="landscape"
