@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Icon } from "@/components/ui/Icon";
-import { cn } from "@/lib/cn";
 import { mapsUrl } from "@/lib/localize";
 
 interface LocationCardProps {
@@ -12,8 +11,6 @@ interface LocationCardProps {
   hours?: string;
   image: string;
   mapsQuery: string;
-  /** list = baris ringkas (thumbnail kiri) di mobile, kembali bertumpuk mulai sm. */
-  layout?: "stack" | "list";
 }
 
 export function LocationCard({
@@ -24,19 +21,12 @@ export function LocationCard({
   hours,
   image,
   mapsQuery,
-  layout = "stack",
 }: LocationCardProps) {
   const t = useTranslations("common");
-  const isList = layout === "list";
 
   return (
-    <article className={cn("group", isList ? "grid grid-cols-[7rem_1fr] gap-4 sm:flex sm:flex-col" : "flex flex-col")}>
-      <div
-        className={cn(
-          "relative overflow-hidden rounded-xl bg-brick",
-          isList ? "aspect-square sm:aspect-[4/3]" : "aspect-[4/3]",
-        )}
-      >
+    <article className="group flex flex-col">
+      <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-brick">
         <Image
           src={image}
           alt={name}
@@ -44,18 +34,12 @@ export function LocationCard({
           sizes="(min-width: 1024px) 22vw, (min-width: 640px) 45vw, 80vw"
           className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
-        <span
-          className={cn(
-            "absolute top-3 left-3 rounded bg-brick px-2 py-1 text-[0.625rem] font-semibold tracking-[0.14em] text-shell uppercase",
-            isList && "hidden sm:inline",
-          )}
-        >
+        <span className="absolute top-3 left-3 rounded bg-brick px-2 py-1 text-[0.625rem] font-semibold tracking-[0.14em] text-shell uppercase">
           {tag}
         </span>
       </div>
 
-      <div className={cn("min-w-0", isList ? "self-center sm:mt-4" : "mt-4")}>
-        {isList && <p className="eyebrow mb-1 text-[0.625rem] text-brick sm:hidden">{tag}</p>}
+      <div className="mt-4 min-w-0">
         <h3 className="text-sm tracking-wide text-brick-950 uppercase">{name}</h3>
         <ul className="mt-2 space-y-1 text-xs text-charcoal/75 sm:text-sm">
           <li className="flex items-start gap-1.5">

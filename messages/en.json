@@ -101,7 +101,13 @@
   "locationsPage": {
     "eyebrow": "Locations",
     "title": "There's a Tedja for every stride.",
-    "body": "Six Tedja spots across Bandung — for focus, connection and community."
+    "body": "Six Tedja spots across Bandung — for focus, connection and community.",
+    "explorer": {
+      "listTitle": "{count} Tedja spots",
+      "mapTitle": "Map of {name}",
+      "loadingMap": "Loading map…",
+      "directions": "Directions"
+    }
   },
   "communityPage": {
     "eyebrow": "Community",

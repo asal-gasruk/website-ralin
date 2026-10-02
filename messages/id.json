@@ -101,7 +101,13 @@
   "locationsPage": {
     "eyebrow": "Lokasi",
     "title": "Selalu ada Tedja untuk setiap langkah.",
-    "body": "Enam Tedja di seluruh Bandung — untuk fokus, terhubung, dan berkomunitas."
+    "body": "Enam Tedja di seluruh Bandung — untuk fokus, terhubung, dan berkomunitas.",
+    "explorer": {
+      "listTitle": "{count} Tedja di Bandung",
+      "mapTitle": "Peta {name}",
+      "loadingMap": "Memuat peta…",
+      "directions": "Petunjuk arah"
+    }
   },
   "communityPage": {
     "eyebrow": "Komunitas",
